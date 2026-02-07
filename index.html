@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ehab Ayman | Backend .NET Developer</title>
+    <title>Ehab Ayman | Software Engineer & .NET Specialist</title>
     <meta name="description"
-        content="Portfolio of Ehab Ayman, a Junior Backend .NET Developer specializing in ASP.NET, C#, and SQL Server.">
+        content="Portfolio of Ehab Ayman, a Junior Backend .NET Developer specializing in ASP.NET Core, Clean Architecture, and SQL Server.">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -29,28 +29,40 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container hero-grid">
-            <div class="hero-content">
-                <p
-                    style="color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem;">
-                    Available for Hire</p>
-                <h1>Ehab Ayman</h1>
-                <p>A passionate <strong>Junior Backend .NET Developer</strong> dedicated to building efficient,
-                    scalable, and user-centric applications using modern technologies.</p>
-                <div class="btn-group">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="mailto:ehab.ayman7420@gmail.com" class="btn btn-secondary">Get In Touch</a>
+            <div class="hero-content" data-reveal>
+                <div class="status-badge"
+                    style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(59, 130, 246, 0.1); color: var(--primary); padding: 0.5rem 1rem; border-radius: 100px; font-size: 0.85rem; font-weight: 700; margin-bottom: 2rem; border: 1px solid rgba(59, 130, 246, 0.2);">
+                    <span
+                        style="width: 8px; height: 8px; background: var(--primary); border-radius: 50%; display: inline-block; box-shadow: 0 0 10px var(--primary);"></span>
+                    AVAILABLE FOR NEW OPPORTUNITIES
                 </div>
-                <div class="btn-group" style="margin-top: 1rem;">
+                <h1>Crafting Scalable <br><span style="color: var(--primary);">Backend</span> Systems</h1>
+                <p>Hi, I'm Ehab. A <strong>Junior Backend .NET Developer</strong> focused on building robust APIs and
+                    high-performance applications with precision and clean code.</p>
+
+                <div class="btn-group">
+                    <a href="#projects" class="btn btn-primary">
+                        Explore Work <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="mailto:ehab.ayman7420@gmail.com" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Let's Talk
+                    </a>
+                </div>
+
+                <div class="btn-group" style="margin-top: 1.5rem;">
                     <a href="Ehab_Ayman_CV.pdf" target="_blank" class="btn btn-secondary"
-                        style="padding: 0.8rem 1.5rem; font-size: 0.9rem;"><i class="fas fa-file-pdf"></i> View CV</a>
+                        style="padding: 0.8rem 1.5rem; font-size: 0.9rem;">
+                        <i class="fas fa-file-pdf"></i> View Resume
+                    </a>
                     <a href="Ehab_Ayman_CV.pdf" download class="btn btn-secondary"
-                        style="padding: 0.8rem 1.5rem; font-size: 0.9rem;"><i class="fas fa-download"></i> Download
-                        CV</a>
+                        style="padding: 0.8rem 1.5rem; font-size: 0.9rem;">
+                        <i class="fas fa-download"></i> Download
+                    </a>
                 </div>
             </div>
-            <div class="hero-image">
+            <div class="hero-image" data-reveal>
                 <div class="image-blob">
-                    <img src="Image/profile.jpeg" alt="Ehab Ayman">
+                    <img src="Image/Profile1.png" alt="Ehab Ayman">
                 </div>
             </div>
         </div>
@@ -59,73 +71,72 @@
     <!-- About Section -->
     <section id="about">
         <div class="container">
-            <div class="section-header">
-                <h2>About Me</h2>
+            <div class="section-header" data-reveal>
+                <h2>Behind the Code</h2>
                 <div class="line"></div>
             </div>
             <div class="about-grid">
-                <div class="about-card">
+                <div class="about-card" data-reveal>
                     <i class="fas fa-graduation-cap"></i>
                     <h3>Education</h3>
-                    <p>Bachelor of Technology (BIS) in Computer and Information Technology, Galala University (Expected
-                        June 2026). Strong foundation in software engineering and system architecture.</p>
+                    <p style="color: var(--text-muted);">Bachelor of Technology (BIS) in Computer and Information
+                        Technology, Galala University (Expected June 2026). Deep diving into system architecture and
+                        enterprise software design.</p>
                 </div>
-                <div class="about-card">
-                    <i class="fas fa-code-branch"></i>
-                    <h3>Professional Focus</h3>
-                    <p>Junior .NET Backend Developer with hands-on experience in building scalable web systems using C#,
-                        ASP.NET Core Web API, MVC, and SQL Server. Graduated with a capstone project SEEN and
-                        contributed to Mijas, focusing on layered architecture, database design, and maintainable code.
-                        I also create structured technical YouTube content that explains backend concepts and project
-                        construction, strengthening communication and technical clarity.</p>
+                <div class="about-card" data-reveal>
+                    <i class="fas fa-terminal"></i>
+                    <h3>Professional Ethos</h3>
+                    <p style="color: var(--text-muted);">I specialize in C# and ASP.NET Core, with a heavy focus on
+                        Layered Architecture and SQL optimization. Beyond code, I contribute to the dev community via
+                        YouTube, breaking down complex backend patterns into digestable tutorials.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" style="background: var(--bg-offset);">
+    <section id="skills" style="background: rgba(255,255,255,0.01);">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-reveal>
                 <h2>Technical Toolkit</h2>
                 <div class="line"></div>
             </div>
             <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Languages</h3>
-                    <div class="skill-list">
+                <div class="skill-category" data-reveal>
+                    <h3><i class="fas fa-code" style="color: var(--primary);"></i> Languages</h3>
+                    <div class="skill-list" style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
                         <span class="skill-tag">C#</span>
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">Python</span>
                         <span class="skill-tag">T-SQL</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C++</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Frameworks</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">.NET Framework</span>
+                <div class="skill-category" data-reveal>
+                    <h3><i class="fas fa-layer-group" style="color: var(--secondary);"></i> Frameworks</h3>
+                    <div class="skill-list" style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
                         <span class="skill-tag">ASP.NET Core</span>
-                        <span class="skill-tag">ASP.NET MVC</span>
                         <span class="skill-tag">Web API</span>
+                        <span class="skill-tag">MVC</span>
+                        <span class="skill-tag">Entity Framework</span>
                         <span class="skill-tag">WinForms</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Core Concepts</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">OOP</span>
-                        <span class="skill-tag">Clean Architecture</span>
+                <div class="skill-category" data-reveal>
+                    <h3><i class="fas fa-cubes" style="color: var(--accent);"></i> Architecture</h3>
+                    <div class="skill-list" style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+                        <span class="skill-tag">Clean Arch</span>
+                        <span class="skill-tag">N-Tier</span>
                         <span class="skill-tag">RESTful APIs</span>
-                        <span class="skill-tag">Layered Architecture</span>
+                        <span class="skill-tag">OOP</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Tools & DBs</h3>
-                    <div class="skill-list">
+                <div class="skill-category" data-reveal>
+                    <h3><i class="fas fa-tools" style="color: #f59e0b;"></i> Tools & DBs</h3>
+                    <div class="skill-list" style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
                         <span class="skill-tag">SQL Server</span>
-                        <span class="skill-tag">Entity Framework</span>
-                        <span class="skill-tag">ADO.NET</span>
                         <span class="skill-tag">Git / GitHub</span>
+                        <span class="skill-tag">ADO.NET</span>
+                        <span class="skill-tag">Docker</span>
                     </div>
                 </div>
             </div>
@@ -135,133 +146,136 @@
     <!-- Projects Section -->
     <section id="projects">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-reveal>
                 <h2>Featured Projects</h2>
                 <div class="line"></div>
             </div>
             <div class="projects-grid">
                 <!-- Project: SEEN -->
-                <article class="project-card">
-                    <div class="project-visual"><i class="fas fa-running"></i></div>
+                <article class="project-card" data-reveal>
+                    <div class="project-visual">
+                        <i class="fas fa-running" style="color: var(--primary);"></i>
+                    </div>
                     <div class="project-info">
-                        <h3>SEEN – Sports Team Management</h3>
-                        <p>Graduation project featuring mobile and web apps. Designed layered backend using ASP.NET Core
-                            Web API to manage teams, subscriptions, and role-based access.</p>
-                        <div class="project-tags">
+                        <h3>SEEN – Sports Management</h3>
+                        <p>Enterprise-grade sports team management system. Designed a layered backend using ASP.NET Core
+                            to handle complex subscription models.</p>
+                        <div class="project-tags" style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem;">
                             <span class="project-tag">ASP.NET Core</span>
                             <span class="project-tag">SQL Server</span>
-                            <span class="project-tag">Layered Arch</span>
                         </div>
                         <div class="project-links">
                             <a href="https://www.linkedin.com/posts/ehab-ayman-0825492a5_seen-project-demo-activity-7278018265005912064-vO_X"
-                                target="_blank" class="project-link project-link-main"><i class="fab fa-linkedin"></i>
-                                Video Demo</a>
+                                target="_blank" class="project-link project-link-main">Demo Video</a>
+                            <a href="#" class="project-link project-link-github">Private Repo</a>
                         </div>
                     </div>
                 </article>
 
                 <!-- Project: DVLD -->
-                <article class="project-card">
-                    <div class="project-visual"><i class="fas fa-id-card"></i></div>
+                <article class="project-card" data-reveal>
+                    <div class="project-visual">
+                        <i class="fas fa-id-card" style="color: var(--secondary);"></i>
+                    </div>
                     <div class="project-info">
                         <h3>DVLD – License System</h3>
-                        <p>Desktop application to manage driver licenses and vehicle registrations. Implemented full
-                            CRUD using WinForms and 3-tier architecture with ADO.NET.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">C#</span>
-                            <span class="project-tag">WinForms</span>
-                            <span class="project-tag">3-Tier</span>
+                        <p>A comprehensive desktop solution for driver and vehicle licensing, implementing strict
+                            business logic in a 3-tier architecture.</p>
+                        <div class="project-tags" style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem;">
+                            <span class="project-tag">C# WinForms</span>
+                            <span class="project-tag">ADO.NET</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/ihab55/DVDL-System" target="_blank"
-                                class="project-link project-link-github"><i class="fab fa-github"></i> Repository</a>
                             <a href="https://www.linkedin.com/posts/ehab-ayman-0825492a5_csharp-dotnet-winforms-activity-7351974034210795520-ZhVU"
-                                target="_blank" class="project-link project-link-main"><i class="fab fa-linkedin"></i>
-                                Video</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project: Hospital -->
-                <article class="project-card">
-                    <div class="project-visual"><i class="fas fa-hospital"></i></div>
-                    <div class="project-info">
-                        <h3>GU Hospital System</h3>
-                        <p>Hospital Management System using C# and SQL Server. Featured secure interfaces and role-based
-                            access to optimize staff and doctor workflows.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">C#</span>
-                            <span class="project-tag">WinForms</span>
-                            <span class="project-tag">SQL Server</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/ihab55/GU-Hospital-management-System-" target="_blank"
-                                class="project-link project-link-github"><i class="fab fa-github"></i> Repository</a>
+                                target="_blank" class="project-link project-link-main">Full Demo</a>
+                            <a href="https://github.com/ihab55/DVDL-System" target="_blank"
+                                class="project-link project-link-github">Source Code</a>
                         </div>
                     </div>
                 </article>
 
                 <!-- Project: Mini Exams -->
-                <article class="project-card">
-                    <div class="project-visual"><i class="fas fa-graduation-cap"></i></div>
+                <article class="project-card" data-reveal>
+                    <div class="project-visual">
+                        <i class="fas fa-graduation-cap" style="color: var(--accent);"></i>
+                    </div>
                     <div class="project-info">
                         <h3>Mini Exams Online</h3>
-                        <p>Web-based system for creating and evaluating exams. Implemented role-based access and backend
-                            logic using ASP.NET Core and ADO.NET.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">ASP.NET Core</span>
+                        <p>Scalable web-based assessment platform featuring real-time evaluation logic and secure
+                            role-based access control.</p>
+                        <div class="project-tags" style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem;">
                             <span class="project-tag">Razor Pages</span>
                             <span class="project-tag">MVC</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/ihab55/MiniExamsOnlineSystems" target="_blank"
-                                class="project-link project-link-github"><i class="fab fa-github"></i> Repository</a>
                             <a href="https://www.linkedin.com/posts/ehab-ayman-0825492a5_mini-exams-web-system-technologies-c-activity-7323298537201389569-wthM"
-                                target="_blank" class="project-link project-link-main"><i class="fab fa-linkedin"></i>
-                                Video</a>
+                                target="_blank" class="project-link project-link-main">Watch Video</a>
+                            <a href="https://github.com/ihab55/MiniExamsOnlineSystems" target="_blank"
+                                class="project-link project-link-github">GitHub</a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Project 4 -->
-                <article class="project-card">
-                    <div class="project-visual"><i class="fas fa-key"></i></div>
+                <!-- Project: Hospital -->
+                <article class="project-card" data-reveal>
+                    <div class="project-visual">
+                        <i class="fas fa-hospital" style="color: #ef4444;"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>GU Hospital System</h3>
+                        <p>Hospital Management System using C# and SQL Server. Featured secure interfaces and role-based
+                            access to optimize staff and doctor workflows.</p>
+                        <div class="project-tags" style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem;">
+                            <span class="project-tag">C# WinForms</span>
+                            <span class="project-tag">SQL Server</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ihab55/GU-Hospital-management-System-" target="_blank"
+                                class="project-link project-link-github" style="flex: 1;">GitHub Repo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project: Password Master -->
+                <article class="project-card" data-reveal>
+                    <div class="project-visual">
+                        <i class="fas fa-key" style="color: #f59e0b;"></i>
+                    </div>
                     <div class="project-info">
                         <h3>Password Master</h3>
                         <p>Secure password generation utility with customizable complexity parameters and smooth user
                             interaction.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Algorithms</span>
+                        <div class="project-tags" style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem;">
                             <span class="project-tag">C#</span>
-                            <span class="project-tag">UI Design</span>
+                            <span class="project-tag">Algorithms</span>
                         </div>
                         <div class="project-links">
+                            <a href="https://www.linkedin.com/posts/ehabaym_dotnet-cybersecurity-passwordgenerator-activity-7320784143020097538-fd7V"
+                                target="_blank" class="project-link project-link-main">Video</a>
                             <a href="https://github.com/ihab55/Generate-Password" target="_blank"
-                                class="project-link project-link-github"><i class="fab fa-github"></i> Repository</a>
-                            <a href="https://www.linkedin.com/posts/ehabaym_dotnet-cybersecurity-passwordgenerator-activity-7320784143020097538-fd7V?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEmVzSIBzW8nsuMg5uVgr861-uqDgdE9JLI"
-                                target="_blank" class="project-link project-link-main"><i class="fab fa-linkedin"></i>
-                                Video</a>
+                                class="project-link project-link-github">GitHub</a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Project 5 -->
-                <article class="project-card">
-                    <div class="project-visual"><i class="fas fa-puzzle-piece"></i></div>
+                <!-- Project: Logic Puzzle -->
+                <article class="project-card" data-reveal>
+                    <div class="project-visual">
+                        <i class="fas fa-puzzle-piece" style="color: #10b981;"></i>
+                    </div>
                     <div class="project-info">
                         <h3>Logic Puzzle Game</h3>
                         <p>Interactive game developed to showcase complex logic implementation and state management in
                             desktop applications.</p>
-                        <div class="project-tags">
+                        <div class="project-tags" style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem;">
                             <span class="project-tag">Game Logic</span>
-                            <span class="project-tag">Performance</span>
+                            <span class="project-tag">C#</span>
                         </div>
                         <div class="project-links">
+                            <a href="https://www.linkedin.com/posts/ehabaym_gamedevelopment-csharp-dotnet-activity-7301400929507897345-avYp"
+                                target="_blank" class="project-link project-link-main">Full Demo</a>
                             <a href="https://github.com/ihab55/PuzzleGame" target="_blank"
-                                class="project-link project-link-github"><i class="fab fa-github"></i> Repository</a>
-                            <a href="https://www.linkedin.com/posts/ehabaym_gamedevelopment-csharp-dotnet-activity-7301400929507897345-avYp?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEmVzSIBzW8nsuMg5uVgr861-uqDgdE9JLI"
-                                target="_blank" class="project-link project-link-main"><i class="fab fa-linkedin"></i>
-                                Video</a>
+                                class="project-link project-link-github">Source</a>
                         </div>
                     </div>
                 </article>
@@ -269,54 +283,74 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container footer-content">
             <a href="#" class="logo">EHAB AYMAN</a>
+            <p
+                style="color: var(--text-muted); text-align: center; max-width: 500px; margin-top: -1rem; margin-bottom: 1rem;">
+                Let's build something exceptional together. Feel free to reach out for collaborations or inquiries.</p>
             <div class="social-links">
-                <a href="https://github.com/ihab55" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/ehab-ayman-0825492a5/" target="_blank"><i
+                <a href="https://github.com/ihab55" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ehab-ayman-0825492a5/" target="_blank" title="LinkedIn"><i
                         class="fab fa-linkedin"></i></a>
-                <a href="https://www.youtube.com/@ehab.Ayman7420" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="mailto:ehab.ayman7420@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="tel:+201145655800"><i class="fas fa-phone"></i></a>
+                <a href="https://www.youtube.com/@ehab.Ayman7420" target="_blank" title="YouTube"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="mailto:ehab.ayman7420@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+201145655800" title="Phone"><i class="fas fa-phone"></i></a>
             </div>
-            <p class="copyright">&copy; 2026 Ehab Ayman. All rights reserved.</p>
+            <p class="copyright">&copy; 2026 Ehab Ayman. Crafted with precision.</p>
         </div>
     </footer>
 
     <script>
-        // Smooth reveal on scroll (simple implementation)
-        const observerOptions = {
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
+        // Reveal on Scroll
+        const reveal = () => {
+            const reveals = document.querySelectorAll('[data-reveal]');
+            reveals.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
                 }
             });
-        }, observerOptions);
+        };
 
-        document.querySelectorAll('section').forEach(section => {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(20px)';
-            section.style.transition = 'all 0.6s ease-out';
-            observer.observe(section);
-        });
+        window.addEventListener('scroll', reveal);
+        window.addEventListener('load', reveal);
 
-        // Sticky Nav Change
+        // Hide Nav on Scroll Down, Show on Scroll Up
+        let lastScroll = 0;
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('nav');
-            if (window.scrollY > 50) {
-                nav.style.padding = '0.5rem 0';
-                nav.style.boxShadow = '0 10px 30px rgba(0, 86, 179, 0.1)';
+            const currentScroll = window.scrollY;
+
+            // Handle background & height
+            if (currentScroll > 50) {
+                nav.style.background = 'rgba(5, 8, 16, 0.9)';
+                nav.style.height = '70px';
+                nav.style.borderBottomColor = 'rgba(255,255,255,0.1)';
             } else {
-                nav.style.padding = '0';
-                nav.style.boxShadow = 'none';
+                nav.style.background = 'rgba(5, 8, 16, 0.7)';
+                nav.style.height = '90px';
+                nav.style.borderBottomColor = 'var(--glass-border)';
             }
+
+            // Handle hiding/showing
+            if (currentScroll > lastScroll && currentScroll > 200) {
+                // Scrolling down
+                nav.classList.add('nav-hidden');
+            } else {
+                // Scrolling up
+                nav.classList.remove('nav-hidden');
+            }
+
+            lastScroll = currentScroll;
         });
+
+        // Initialize animations for elements in view
+        reveal();
     </script>
 </body>
 
