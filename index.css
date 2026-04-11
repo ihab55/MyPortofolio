@@ -667,6 +667,38 @@ nav .container {
 }
 
 /* Skills Section */
+.skills-3d-scene {
+    perspective: 1500px;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.skills-carousel-3d {
+    position: relative;
+    width: 320px;
+    height: 250px;
+    transform-style: preserve-3d;
+    animation: rotateCarousel 20s linear infinite;
+}
+
+.skills-carousel-3d:hover {
+    animation-play-state: paused;
+}
+
+.skills-carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 90deg)) translateZ(250px);
+}
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -679,6 +711,10 @@ nav .container {
     border-radius: 24px;
     border: 1px solid var(--glass-border);
     transition: var(--transition);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .skill-category:hover {
@@ -712,6 +748,114 @@ nav .container {
     background: rgba(59, 130, 246, 0.1);
     color: var(--primary);
     border-color: rgba(59, 130, 246, 0.3);
+}
+
+/* Senior Frontend Floating Orbs */
+.senior-skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3.5rem;
+    padding: 2rem 0 4rem;
+}
+
+.skill-orb {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: floatOrb 5s ease-in-out infinite;
+    animation-delay: var(--delay);
+    backdrop-filter: blur(10px);
+}
+
+.skill-orb:hover {
+    transform: translateY(-10px) scale(1.15);
+    background: rgba(59, 130, 246, 0.1);
+    border-color: var(--primary);
+    box-shadow: 0 15px 35px rgba(59, 130, 246, 0.4), inset 0 0 25px rgba(59, 130, 246, 0.2);
+    z-index: 20;
+    animation-play-state: paused;
+}
+
+@keyframes floatOrb {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.orb-icon {
+    font-size: 2.25rem;
+    color: var(--text-muted);
+    transition: all 0.3s ease;
+}
+
+.skill-orb:hover .orb-icon {
+    color: var(--white);
+    text-shadow: 0 0 20px var(--primary-glow);
+}
+
+.skill-tooltip {
+    position: absolute;
+    top: -110px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    width: 260px;
+    padding: 1.25rem;
+    background: rgba(5, 8, 16, 0.95);
+    border: 1px solid var(--primary);
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.8), 0 0 30px rgba(59, 130, 246, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    pointer-events: none;
+    backdrop-filter: blur(20px);
+    z-index: 100;
+}
+
+.skill-tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 14px;
+    height: 14px;
+    background: rgba(5, 8, 16, 0.95);
+    border-bottom: 1px solid var(--primary);
+    border-right: 1px solid var(--primary);
+}
+
+.skill-orb:hover .skill-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.skill-tooltip h4 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+    border-bottom: 1px dashed rgba(255,255,255,0.1);
+    padding-bottom: 0.35rem;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.skill-tooltip p {
+    color: rgba(255,255,255,0.85);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 300;
 }
 
 /* Projects Section */
@@ -837,6 +981,66 @@ nav .container {
     object-fit: cover;
     border-radius: 14px;
     border: 1px solid var(--glass-border);
+}
+
+/* 3D Carousel in Activities */
+.activity-3d-scene {
+    perspective: 1200px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    overflow: visible;
+}
+
+.carousel-3d {
+    position: relative;
+    width: 220px;
+    height: 160px;
+    transform-style: preserve-3d;
+    animation: rotateCarousel 16s linear infinite;
+}
+
+.carousel-3d:hover {
+    animation-play-state: paused;
+}
+
+@keyframes rotateCarousel {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 90deg)) translateZ(160px);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 2px solid rgba(59, 130, 246, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: var(--transition);
+}
+
+.carousel-item img:hover {
+    box-shadow: 0 0 25px var(--primary-glow);
+    border-color: var(--primary);
+    transform: scale(1.05);
 }
 
 .project-tag {
