@@ -1004,6 +1004,20 @@ nav .container {
     border: 1px solid var(--glass-border);
 }
 
+.activity-video {
+    margin-top: 1.25rem;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--glass-border);
+}
+
+.activity-video video {
+    width: 100%;
+    display: block;
+    border-radius: 16px;
+    background: #000;
+}
+
 /* 3D Carousel in Activities */
 .activity-3d-scene {
     perspective: 1200px;
