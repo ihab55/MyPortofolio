@@ -4,185 +4,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ehab Ayman | Software Engineer & .NET Specialist</title>
-    <meta name="description"
-        content="Portfolio of Ehab Ayman, a Junior Backend .NET Developer specializing in ASP.NET Core, Clean Architecture, and SQL Server.">
+    <title>Ehab Ayman | Backend .NET Engineer</title>
+    <meta name="description" content="Portfolio of Ehab Ayman — Backend .NET Engineer specializing in ASP.NET Core, Clean Architecture, CQRS, and SQL Server.">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <a href="#" class="logo">EHAB AYMAN</a>
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#education">Education</a>
-                <a href="#experience">Experience</a>
-                <a href="#skills">Skills</a>
-                <a href="#activities">Activities</a>
-                <a href="#projects">Projects</a>
-                <a href="mailto:ehab.ayman7420@gmail.com">Contact</a>
+
+    <!-- ======================================================
+         NAVIGATION
+    ====================================================== -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#home" class="logo">Ehab<span>.</span></a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+
+            <div class="nav-cta">
+                <a href="https://github.com/ihab55" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#contact" class="btn-nav">Contact</a>
             </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#education" class="mobile-link">Education</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#activities" class="mobile-link">Activities</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+        <div class="mobile-social">
+            <a href="https://github.com/ihab55" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ehab-ayman-0825492a5/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:ehab.ayman7420@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+
+    <!-- ======================================================
+         HERO
+    ====================================================== -->
     <section id="home" class="hero">
         <div class="container hero-grid">
             <div class="hero-content" data-reveal>
-                <div class="status-badge"
-                    style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(59, 130, 246, 0.1); color: var(--primary); padding: 0.5rem 1rem; border-radius: 100px; font-size: 0.85rem; font-weight: 700; margin-bottom: 2rem; border: 1px solid rgba(59, 130, 246, 0.2);">
-                    <span
-                        style="width: 8px; height: 8px; background: var(--primary); border-radius: 50%; display: inline-block; box-shadow: 0 0 10px var(--primary);"></span>
-                    AVAILABLE FOR NEW OPPORTUNITIES
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    Available for New Opportunities
                 </div>
-                <h1>Crafting Scalable <br><span style="color: var(--primary);">Backend</span> Systems</h1>
-                <p>Hi, I'm Ehab. A <strong>Junior Backend .NET Developer</strong> focused on building robust APIs and
-                    high-performance applications with precision and clean code.</p>
+
+                <p class="hero-eyebrow">Ehab Ayman · Backend Engineer</p>
+
+                <h1>Building <span class="highlight">Scalable</span><br>Backend Systems</h1>
+
+                <p class="hero-desc">
+                    .NET engineer focused on Clean Architecture, production-grade APIs, and data-driven applications.
+                    I turn complex business logic into maintainable, high-performance software.
+                </p>
 
                 <div class="btn-group">
                     <a href="#projects" class="btn btn-primary">
-                        Explore Work <i class="fas fa-arrow-right"></i>
+                        View Projects <i class="fas fa-arrow-right"></i>
                     </a>
-                    <a href="mailto:ehab.ayman7420@gmail.com" class="btn btn-secondary">
-                        <i class="fas fa-envelope"></i> Let's Talk
+                    <a href="#contact" class="btn btn-secondary">
+                        Get in Touch
+                    </a>
+                    <a href="Ehab_Ayman_CV.pdf" download class="btn btn-ghost">
+                        <i class="fas fa-download"></i> Resume
                     </a>
                 </div>
 
-                <div class="btn-group" style="margin-top: 1.5rem;">
-                    <a href="Ehab_Ayman_CV.pdf" target="_blank" class="btn btn-secondary"
-                        style="padding: 0.8rem 1.5rem; font-size: 0.9rem;">
-                        <i class="fas fa-file-pdf"></i> View Resume
-                    </a>
-                    <a href="Ehab_Ayman_CV.pdf" download class="btn btn-secondary"
-                        style="padding: 0.8rem 1.5rem; font-size: 0.9rem;">
-                        <i class="fas fa-download"></i> Download
-                    </a>
+                <div class="hero-social">
+                    <span>Find me on</span>
+                    <a href="https://github.com/ihab55" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ehab-ayman-0825492a5/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@ehab.Ayman7420" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="mailto:ehab.ayman7420@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
+
             <div class="hero-image" data-reveal>
-                <div class="image-blob">
+                <div class="hero-image-wrap">
                     <img src="Image/Profile1.png" alt="Ehab Ayman">
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-num">1+</span>
+                        <span class="hero-stat-label">Year Experience</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-num">10+</span>
+                        <span class="hero-stat-label">Projects Built</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-num">.NET</span>
+                        <span class="hero-stat-label">Specialist</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- ======================================================
+         ABOUT
+    ====================================================== -->
     <section id="about">
         <div class="container">
             <div class="section-header" data-reveal>
-                <h2>Professional Narrative</h2>
-                <div class="line"></div>
+                <p class="section-label">About Me</p>
+                <h2 class="section-title">Engineer by craft,<br>problem-solver by nature</h2>
             </div>
+
             <div class="about-grid-premium">
                 <div class="about-main-content" data-reveal>
-                    <p class="about-lead">I am a results-driven <strong>Software Engineer</strong> specializing in the
-                        .NET ecosystem, with a focus on architecting robust backend systems and scalable web
-                        applications.</p>
-                    <p>Currently pursuing my Bachelor's in Information Systems at Galala University (Expected 2026), my journey in
-                        software development is defined by a commitment to <strong>Clean Architecture</strong> and
-                        <strong>high-performance backend logic</strong>. I thrive on solving complex technical
-                        challenges and bridging the gap between theoretical software engineering and practical,
-                        real-world implementations.</p>
-                    <p>Beyond building production-ready systems, I am a dedicated lifelong learner and technical
-                        communicator. I share my expertise through technical tutorials on YouTube, breaking down complex
-                        patterns into digestible formats to help fellow developers grow. My approach combines technical
-                        precision with a product-focused mindset to deliver exceptional software experiences.</p>
+                    <p class="about-lead">I'm a <strong>Software Engineer</strong> specializing in the .NET ecosystem — building robust backend systems and scalable web applications that hold up under real-world demands.</p>
+                    <p>Currently completing my Bachelor's in Information Systems at Galala University, my work is defined by a commitment to <strong>Clean Architecture</strong>, <strong>high-performance backend logic</strong>, and writing code that future engineers can actually maintain. I'm drawn to hard problems at the intersection of architecture and business logic.</p>
+                    <p>Beyond production systems, I actively share knowledge through technical content on YouTube, translating complex patterns into approachable formats. My approach combines technical rigor with a product mindset — shipping software that solves real problems cleanly.</p>
                 </div>
                 <div class="about-stats-grid" data-reveal>
                     <div class="stat-card">
-                        <h3>1.5+</h3>
-                        <p>Years Experience</p>
+                        <div class="num">3+</div>
+                        <div class="label">Years in Development</div>
                     </div>
                     <div class="stat-card">
-                        <h3>5+</h3>
-                        <p>Projects Delivered</p>
+                        <div class="num">10+</div>
+                        <div class="label">Projects Delivered</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" style="background: rgba(255,255,255,0.01);">
+    <!-- ======================================================
+         EDUCATION
+    ====================================================== -->
+    <section id="education">
         <div class="container">
             <div class="section-header" data-reveal>
-                <h2>Academic Foundation</h2>
-                <div class="line"></div>
+                <p class="section-label">Education</p>
+                <h2 class="section-title">Academic Foundation</h2>
             </div>
-            <!-- FGSSR Card -->
-            <div class="education-card fgssr-card" data-reveal>
-                <div class="edu-content">
+
+            <div class="edu-stack">
+                <!-- FGSSR -->
+                <div class="education-card fgssr-card" data-reveal>
                     <div class="edu-logo-group">
                         <div class="edu-logo-container">
-                            <img src="Image/FGSSR Logo" alt="FGSSR Cairo University" class="edu-logo">
+                            <img src="Image/FGSSR Logo" alt="Cairo University FGSSR" class="edu-logo">
                         </div>
                         <div class="edu-university-info">
                             <h3>Cairo University – FGSSR</h3>
                             <p class="degree">Computer Science Postgraduate Academic Diploma</p>
                             <p class="specialization">Faculty of Graduate Studies for Statistical Research · Computer Science</p>
-                            <span class="edu-date">Sep 2026 – Oct 2028</span>
+                            <span class="edu-date"><i class="far fa-calendar"></i> Sep 2026 – Oct 2028</span>
                         </div>
                     </div>
                     <div class="edu-details-text">
-                        <p>Advancing into postgraduate studies at one of Egypt's most prestigious research faculties, deepening expertise in computer science theory, advanced algorithms, and data-driven systems within an academic research environment.</p>
+                        <p>Advancing into postgraduate studies at one of Egypt's most prestigious research faculties, deepening expertise in computer science theory, advanced algorithms, and data-driven systems.</p>
                         <ul>
-                            <li>Advanced Computer Science & Algorithm Theory</li>
-                            <li>Statistical Computing & Data Analysis</li>
-                            <li>Research Methodology & Academic Publishing</li>
+                            <li>Advanced Computer Science &amp; Algorithm Theory</li>
+                            <li>Statistical Computing &amp; Data Analysis</li>
+                            <li>Research Methodology &amp; Academic Publishing</li>
                         </ul>
                     </div>
                 </div>
-            </div>
 
-            <div class="education-grid" data-reveal style="margin-top: 3rem;">
-                <div class="education-card">
-                    <div class="edu-content">
-                        <div class="edu-logo-group">
-                            <div class="edu-logo-container">
-                                <img src="Image/Galala Logo.jpg" alt="Galala University" class="edu-logo">
-                            </div>
-                            <div class="edu-university-info">
-                                <h3>Galala University</h3>
-                                <p class="degree">Bachelor of Technology (Information Systems)</p>
-                                <p class="specialization">Computer and Information Technology</p>
-                                <span class="edu-date">Expected Graduation: June 2026</span>
-                            </div>
+                <!-- Galala -->
+                <div class="education-card" data-reveal>
+                    <div class="edu-logo-group">
+                        <div class="edu-logo-container">
+                            <img src="Image/Galala Logo.jpg" alt="Galala University" class="edu-logo">
                         </div>
-                        <div class="edu-details-text">
-                            <p>My academic journey at Galala University is focused on bridging the gap between business
-                                intelligence and core computer science. I am deeply involved in studying enterprise
-                                system architecture, database management, and advanced software engineering principles.
-                            </p>
+                        <div class="edu-university-info">
+                            <h3>Galala University</h3>
+                            <p class="degree">Bachelor of Technology — Information Systems</p>
+                            <p class="specialization">Computer and Information Technology</p>
+                            <span class="edu-date"><i class="far fa-calendar"></i> Expected Graduation: June 2026</span>
+                        </div>
+                    </div>
+                    <div class="edu-details-text">
+                            <p>Focused on bridging business intelligence and core computer science — studying enterprise system architecture, database management, and advanced software engineering principles.</p>
                             <ul>
-                                <li>Focus on Enterprise Backend Systems</li>
-                                <li>Data Structures & Algorithms Mastery</li>
-                                <li>Relational Database Design & SQL Performance</li>
+                                <li>Enterprise Backend Systems</li>
+                                <li>Data Structures &amp; Algorithms Mastery</li>
+                                <li>Relational Database Design &amp; SQL Performance</li>
                             </ul>
                         </div>
-                    </div>
-                </div>
-                <div class="edu-visual">
-                    <div class="edu-portrait-container">
-                        <img src="Image/GalalaEhab.png" alt="Ehab Ayman at Galala University">
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" style="background: rgba(255,255,255,0.01);">
+    <!-- ======================================================
+         EXPERIENCE
+    ====================================================== -->
+    <section id="experience">
         <div class="container">
             <div class="section-header" data-reveal>
-                <h2>Industry Experience</h2>
-                <div class="line"></div>
+                <p class="section-label">Experience</p>
+                <h2 class="section-title">Where I've Worked</h2>
             </div>
+
             <div class="experience-timeline">
+
                 <!-- DEPI -->
                 <div class="experience-card" data-reveal>
                     <div class="exp-header">
@@ -190,26 +235,24 @@
                             <img src="Image/DEPI logo.png" alt="DEPI Logo">
                         </div>
                         <div class="exp-title">
-                            <h3>Fullstack web Dotnet</h3>
-                            <a href="#" class="company">Digital Egypt Pioneers Initiative - DEPI · Internship</a>
+                            <h3>Fullstack .NET Web Developer</h3>
+                            <a href="#" class="company">Digital Egypt Pioneers Initiative (DEPI) · Internship</a>
                         </div>
                         <div class="exp-meta">
-                            <span class="date">Nov 2025 - Jul 2026 · 9 mos</span>
-                            <span class="location">Cairo, Egypt · Hybrid</span>
+                            <span class="date">Nov 2025 – Jul 2026 · 9 mos</span>
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Cairo, Egypt · Hybrid</span>
                         </div>
                     </div>
                     <div class="exp-body">
-                        <p>During my internship within the DEPI Software Development Track, I worked on building and improving data-driven applications using modern .NET technologies. The training strengthened my backend development skills using C#, allowing me to implement clean and scalable application logic while following best practices and structured architecture models.</p>
-                        <p>On the frontend side, I gained practical experience in creating responsive and user-friendly interfaces using HTML5, JavaScript, and CSS3, ensuring smooth integration with backend APIs and enhancing overall user experience.</p>
+                        <p>Within the DEPI Software Development Track, I built and improved data-driven applications using modern .NET technologies. Strengthened backend skills in C# with clean, scalable application logic, while also gaining practical frontend experience with HTML5, JavaScript, and CSS3.</p>
                         <ul>
-                            <li>Developing RESTful .NET Core Web APIs and handling data flow between layers.</li>
-                            <li>Building web interfaces using MVC and improving UI responsiveness.</li>
-                            <li>Implementing database operations and relational design using SQL Server.</li>
-                            <li>Writing modular, maintainable code aligned with Clean Architecture principles.</li>
-                            <li>Debugging, testing, and optimizing performance across both client and server sides.</li>
-                            <li>Collaborating in team-based projects and applying Agile development practices.</li>
+                            <li>Developed RESTful .NET Core Web APIs and handled data flow between layers.</li>
+                            <li>Built web interfaces using MVC and improved UI responsiveness.</li>
+                            <li>Implemented database operations and relational design using SQL Server.</li>
+                            <li>Wrote modular, maintainable code aligned with Clean Architecture principles.</li>
+                            <li>Debugged, tested, and optimized performance across client and server sides.</li>
+                            <li>Collaborated in team-based projects applying Agile development practices.</li>
                         </ul>
-                        <p>This internship provided hands-on exposure to real-world software development and enhanced my full-stack capability—combining strong backend logic with effective frontend design to deliver scalable, modern web applications.</p>
                         <div class="exp-skills">
                             <span class="skill-tag">.NET Core</span>
                             <span class="skill-tag">Web API</span>
@@ -221,7 +264,7 @@
                             <span class="skill-tag">CSS3</span>
                             <span class="skill-tag">Agile</span>
                         </div>
-                        <div class="exp-cert-space" style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <div class="exp-cert-space">
                             <a href="Image/DEPI Full Stack Web/Ehab Ayman Ahmed Hassan.pdf" target="_blank" class="cert-item">
                                 <i class="fas fa-certificate"></i> Certificate 1
                             </a>
@@ -240,18 +283,17 @@
                         </div>
                         <div class="exp-title">
                             <h3>Cyber Security Intern (Fortinet)</h3>
-                            <a href="#" class="company">National Telecommunication Institute - NTI</a>
+                            <a href="#" class="company">National Telecommunication Institute – NTI</a>
                         </div>
                         <div class="exp-meta">
-                            <span class="date">Oct 2025 - Dec 2025 · 3 mos</span>
-                            <span class="location">Cairo, Egypt · On-site</span>
+                            <span class="date">Oct 2025 – Dec 2025 · 3 mos</span>
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Cairo, Egypt · On-site</span>
                         </div>
                     </div>
                     <div class="exp-body">
-                        <p>Accepted into the NTI–Fortinet Cyber Security Program, focusing on advanced skills in network
-                            security and threat protection.</p>
+                        <p>Accepted into the NTI–Fortinet Cyber Security Program, focusing on advanced network security skills and threat protection within enterprise environments.</p>
                         <ul>
-                            <li>Fundamentals of Cyber Security, Networking, and Firewall Configuration (FortiGate).</li>
+                            <li>Cyber Security fundamentals, Networking, and Firewall Configuration (FortiGate).</li>
                             <li>Network Security Operations, Monitoring, and Risk Assessment.</li>
                             <li>Incident Response and Secure Application Deployment strategies.</li>
                             <li>Integrating security principles into the software development lifecycle (SDLC).</li>
@@ -262,8 +304,7 @@
                             <span class="skill-tag">Risk Assessment</span>
                             <span class="skill-tag">Cyber Security</span>
                         </div>
-
-                        <div class="activity-gallery" style="margin-top: 1.5rem;">
+                        <div class="activity-gallery">
                             <img src="Image/Fortinet/Fortinet1.jpeg" alt="Fortinet NSE4 License 1">
                             <img src="Image/Fortinet/Fortinet2.jpeg" alt="Fortinet NSE4 License 2">
                             <img src="Image/Fortinet/Fortinet3.jpeg" alt="Fortinet NSE4 License 3">
@@ -279,24 +320,22 @@
                             <img src="Image/Programming Logo.png" alt="Programming Advices Logo">
                         </div>
                         <div class="exp-title">
-                            <h3>Full Stack web / Backend Apprentice</h3>
+                            <h3>Full Stack / Backend Apprentice</h3>
                             <a href="#" class="company">Programming Advices</a>
                         </div>
                         <div class="exp-meta">
-                            <span class="date">Oct 2023 - Present · 2 yrs 5 mos</span>
-                            <span class="location">Amman, Jordan · Remote</span>
+                            <span class="date">Oct 2023 – Present · 3 yrs</span>
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Amman, Jordan · Remote</span>
                         </div>
                     </div>
                     <div class="exp-body">
-                        <p>Engaged in a high-intensity, structured long-term program guided by senior industry experts.
-                            The curriculum emphasized foundational programming mastery and applied software engineering.
-                        </p>
+                        <p>High-intensity structured program guided by senior industry experts, emphasizing foundational programming mastery and applied software engineering across the full .NET stack.</p>
                         <ul>
-                            <li>Mastery in C++, C#, and .NET Framework for both desktop and web systems.</li>
-                            <li>Deep dive into Advanced Algorithms, Data Structures, and OOP principles.</li>
+                            <li>Mastery in C++, C#, and .NET Framework for desktop and web systems.</li>
+                            <li>Advanced Algorithms, Data Structures, and OOP principles.</li>
                             <li>Design and implementation of RESTful services and relational database schemas.</li>
-                            <li>Backend & full-stack development for desktop using Dotnet technologies.</li>
-                            <li>Bridging theoretical CS concepts with real-world enterprise software patterns.</li>
+                            <li>Backend &amp; full-stack development for desktop using .NET technologies.</li>
+                            <li>Bridging theoretical CS with real-world enterprise software patterns.</li>
                         </ul>
                         <div class="exp-skills">
                             <span class="skill-tag">C#</span>
@@ -305,166 +344,113 @@
                             <span class="skill-tag">Algorithms</span>
                             <span class="skill-tag">REST APIs</span>
                         </div>
-
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" style="background: rgba(255,255,255,0.01);">
+    <!-- ======================================================
+         SKILLS
+    ====================================================== -->
+    <section id="skills">
         <div class="container">
             <div class="section-header" data-reveal>
-                <h2>Technical Toolkit</h2>
-                <div class="line"></div>
+                <p class="section-label">Skills</p>
+                <h2 class="section-title">Technical Toolkit</h2>
             </div>
-            <div class="senior-skills-grid" data-reveal>
-                <div class="skill-orb" style="--delay: 0s;">
-                    <div class="orb-icon"><i class="fas fa-hashtag"></i></div>
-                    <div class="skill-tooltip">
-                        <h4>C#</h4>
-                        <p>Primary backend language for robust enterprise applications.</p>
+
+            <div class="skills-layout" data-reveal>
+
+                <div class="skill-group">
+                    <div class="skill-group-header">
+                        <div class="skill-group-icon"><i class="fas fa-server"></i></div>
+                        <h3>Backend &amp; Languages</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip">C#</span>
+                        <span class="skill-chip">C++</span>
+                        <span class="skill-chip">Python</span>
+                        <span class="skill-chip">ASP.NET Core</span>
+                        <span class="skill-chip">Web API</span>
+                        <span class="skill-chip">MVC</span>
+                        <span class="skill-chip">WinForms</span>
+                        <span class="skill-chip">SignalR</span>
                     </div>
                 </div>
-                <div class="skill-orb" style="--delay: 0.2s;">
-                    <div class="orb-icon"><i class="fas fa-database"></i></div>
-                    <div class="skill-tooltip">
-                        <h4>T-SQL</h4>
-                        <p>Advanced database querying, stored procedures, and optimization.</p>
+
+                <div class="skill-group">
+                    <div class="skill-group-header">
+                        <div class="skill-group-icon"><i class="fas fa-database"></i></div>
+                        <h3>Database &amp; Data Access</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip">SQL Server</span>
+                        <span class="skill-chip">T-SQL</span>
+                        <span class="skill-chip">Entity Framework Core</span>
+                        <span class="skill-chip">ADO.NET</span>
+                        <span class="skill-chip">Dapper</span>
+                        <span class="skill-chip">Stored Procedures</span>
                     </div>
                 </div>
-                <div class="skill-orb" style="--delay: 0.4s;">
-                    <div class="orb-icon"><i class="fab fa-python"></i></div>
-                    <div class="skill-tooltip">
-                        <h4>Python</h4>
-                        <p>Scripting, automation, and basic logic implementations.</p>
+
+                <div class="skill-group">
+                    <div class="skill-group-header">
+                        <div class="skill-group-icon"><i class="fas fa-layer-group"></i></div>
+                        <h3>Architecture &amp; Patterns</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip">Clean Architecture</span>
+                        <span class="skill-chip">CQRS</span>
+                        <span class="skill-chip">N-Tier</span>
+                        <span class="skill-chip">OOP</span>
+                        <span class="skill-chip">SOLID</span>
+                        <span class="skill-chip">RESTful APIs</span>
+                        <span class="skill-chip">Result Pattern</span>
+                        <span class="skill-chip">JWT &amp; Auth</span>
                     </div>
                 </div>
-                <div class="skill-orb" style="--delay: 0.6s;">
-                    <div class="orb-icon"><i class="fas fa-code"></i></div>
-                    <div class="skill-tooltip">
-                        <h4>C++</h4>
-                        <p>Memory management, data structures, and algorithmic efficiency.</p>
+
+                <div class="skill-group">
+                    <div class="skill-group-header">
+                        <div class="skill-group-icon"><i class="fas fa-tools"></i></div>
+                        <h3>Tools &amp; DevOps</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip">Git</span>
+                        <span class="skill-chip">GitHub</span>
+                        <span class="skill-chip">Docker</span>
+                        <span class="skill-chip">Swagger</span>
+                        <span class="skill-chip">FluentValidation</span>
+                        <span class="skill-chip">HTML5</span>
+                        <span class="skill-chip">CSS3</span>
+                        <span class="skill-chip">JavaScript</span>
                     </div>
                 </div>
-                <div class="skill-orb" style="--delay: 0.8s;">
-                    <div class="orb-icon"><i class="fas fa-globe"></i></div>
-                    <div class="skill-tooltip">
-                        <h4>ASP.NET Core</h4>
-                        <p>High-performance framework for modern, cloud-based web apps.</p>
-                    </div>
-                </div>
-                <div class="skill-orb" style="--delay: 1.0s;">
-                    <div class="orb-icon"><i class="fas fa-plug"></i></div>
-                    <div class="skill-tooltip">
-                        <h4>Web API</h4>
-                        <p>Building scalable and secure RESTful backend services.</p>
-                    </div>
-                </div>
-                <div class="skill-orb" style="--delay: 1.2s;">
-                    <div class="orb-icon"><i class="fas fa-window-maximize"></i></div>
-                    <div class="skill-tooltip">
-                        <h4>MVC</h4>
-                        <p>Model-View-Controller pattern for structured web applications.</p>
-                    </div>
-                </div>
-                <div class="skill-orb" style="--delay: 1.4s;">
-                    <div class="orb-icon"><i class="fas fa-sitemap"></i></div>
-                    <div class="skill-tooltip">
-                        <h4>Entity Framework</h4>
-                        <p>Advanced ORM for efficient relational database management.</p>
-                    </div>
-                </div>
-                <div class="skill-orb" style="--delay: 1.6s;">
-                    <div class="orb-icon"><i class="fas fa-desktop"></i></div>
-                    <div class="skill-tooltip">
-                        <h4>WinForms</h4>
-                        <p>Developing comprehensive desktop automation solutions.</p>
-                    </div>
-                </div>
-                <div class="skill-orb" style="--delay: 1.8s;">
-                    <div class="orb-icon"><i class="fas fa-layer-group"></i></div>
-                    <div class="skill-tooltip">
-                        <h4>Clean Arch</h4>
-                        <p>Architectural design prioritizing separation of concerns and testability.</p>
-                    </div>
-                </div>
-                <div class="skill-orb" style="--delay: 2.0s;">
-                    <div class="orb-icon"><i class="fas fa-building"></i></div>
-                    <div class="skill-tooltip">
-                        <h4>N-Tier</h4>
-                        <p>Multi-layered systems for secure and maintainable infrastructure.</p>
-                    </div>
-                </div>
-                <div class="skill-orb" style="--delay: 2.2s;">
-                    <div class="orb-icon"><i class="fas fa-arrows-rotate"></i></div>
-                    <div class="skill-tooltip">
-                        <h4>RESTful APIs</h4>
-                        <p>Stateless, standard-compliant communication interfaces.</p>
-                    </div>
-                </div>
-                <div class="skill-orb" style="--delay: 2.4s;">
-                    <div class="orb-icon"><i class="fas fa-cubes"></i></div>
-                    <div class="skill-tooltip">
-                        <h4>OOP</h4>
-                        <p>Object-oriented programming mastery for modular codebase.</p>
-                    </div>
-                </div>
-                <div class="skill-orb" style="--delay: 2.6s;">
-                    <div class="orb-icon"><i class="fas fa-server"></i></div>
-                    <div class="skill-tooltip">
-                        <h4>SQL Server</h4>
-                        <p>Relational database architecting and query performance tuning.</p>
-                    </div>
-                </div>
-                <div class="skill-orb" style="--delay: 2.8s;">
-                    <div class="orb-icon"><i class="fab fa-github"></i></div>
-                    <div class="skill-tooltip">
-                        <h4>Git / GitHub</h4>
-                        <p>Version control, branching strategies, and team collaboration.</p>
-                    </div>
-                </div>
-                <div class="skill-orb" style="--delay: 3.0s;">
-                    <div class="orb-icon"><i class="fas fa-network-wired"></i></div>
-                    <div class="skill-tooltip">
-                        <h4>ADO.NET</h4>
-                        <p>Low-level, high-performance database connectivity.</p>
-                    </div>
-                </div>
-                <div class="skill-orb" style="--delay: 3.1s;">
-                    <div class="orb-icon"><i class="fas fa-bolt"></i></div>
-                    <div class="skill-tooltip">
-                        <h4>Dapper</h4>
-                        <p>High-performance micro-ORM for efficient data mapping.</p>
-                    </div>
-                </div>
-                <div class="skill-orb" style="--delay: 3.2s;">
-                    <div class="orb-icon"><i class="fab fa-docker"></i></div>
-                    <div class="skill-tooltip">
-                        <h4>Docker</h4>
-                        <p>Containerization for consistent deployment environments.</p>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Activities Section -->
-    <section id="activities" style="background: rgba(255,255,255,0.01);">
+    <!-- ======================================================
+         ACTIVITIES
+    ====================================================== -->
+    <section id="activities">
         <div class="container">
             <div class="section-header" data-reveal>
-                <h2>Activities</h2>
-                <div class="line"></div>
+                <p class="section-label">Beyond Code</p>
+                <h2 class="section-title">Activities &amp; Achievements</h2>
             </div>
 
             <div class="activities-grid">
+
                 <article class="activity-card" data-reveal>
                     <div class="activity-header">
                         <h3>Speaker – New Students Welcome 2026/2027</h3>
                         <span class="activity-date">Sep 2026</span>
                     </div>
-                    <p class="activity-text">Invited as a speaker at Galala University's welcome event for new incoming students of the 2026/2027 academic year, sharing experience, advice, and insights to help freshmen navigate university life and make the most of their journey.</p>
+                    <p class="activity-text">Invited as a speaker at Galala University's welcome event for the 2026/2027 intake — sharing insights and practical advice to help incoming students navigate university life.</p>
                     <div class="activity-video">
                         <video controls preload="metadata">
                             <source src="Image/Speaker 2026.mp4" type="video/mp4">
@@ -477,12 +463,12 @@
                         <h3>ACPC Competition – Day 7</h3>
                         <span class="activity-date">19 Aug 2026</span>
                     </div>
-                    <p class="activity-text">Competed in the Arab Collegiate Programming Contest (ACPC), representing the university in one of the most prestigious competitive programming events in the Arab world, pushing algorithmic problem-solving skills under pressure.</p>
+                    <p class="activity-text">Competed in the Arab Collegiate Programming Contest (ACPC), representing the university in one of the most prestigious competitive programming events in the Arab world.</p>
                     <div class="activity-gallery">
-                        <img src="Image/ACPC2/ACPC1.png" alt="ACPC Competition 1">
-                        <img src="Image/ACPC2/ACPC2.jpeg" alt="ACPC Competition 2">
-                        <img src="Image/ACPC2/ACPC3.jpeg" alt="ACPC Competition 3">
-                        <img src="Image/ACPC2/ACPC4.jpeg" alt="ACPC Competition 4">
+                        <img src="Image/ACPC2/ACPC1.png" alt="ACPC 1">
+                        <img src="Image/ACPC2/ACPC2.jpeg" alt="ACPC 2">
+                        <img src="Image/ACPC2/ACPC3.jpeg" alt="ACPC 3">
+                        <img src="Image/ACPC2/ACPC4.jpeg" alt="ACPC 4">
                     </div>
                 </article>
 
@@ -491,7 +477,7 @@
                         <h3>BCs Graduation Project</h3>
                         <span class="activity-date">17 Jul 2026</span>
                     </div>
-                    <p class="activity-text">Participated in the BCs graduation project presentation, contributing to the evaluation and discussion of graduating students' final projects and showcasing collaborative academic achievement.</p>
+                    <p class="activity-text">Participated in the BCs graduation project presentations, contributing to evaluation and discussion of graduating students' final projects.</p>
                     <div class="activity-gallery">
                         <img src="Image/BCs Graduation/BCs Graduation1.jpeg" alt="BCs Graduation 1">
                         <img src="Image/BCs Graduation/BCs Graduation2.jpeg" alt="BCs Graduation 2">
@@ -503,14 +489,14 @@
                 <article class="activity-card" data-reveal>
                     <div class="activity-header">
                         <h3>Delta Heritage Architectural Competition</h3>
-                        <span class="activity-date">7 Feb 2026 – 24 Mar 2026</span>
+                        <span class="activity-date">7 Feb – 24 Mar 2026</span>
                     </div>
-                    <p class="activity-text">Participated in the Delta Heritage Architectural Competition, collaborating on innovative design solutions that celebrate and preserve cultural heritage through modern architectural thinking.</p>
+                    <p class="activity-text">Participated in the Delta Heritage Architectural Competition, collaborating on innovative design solutions celebrating cultural heritage through modern architectural thinking.</p>
                     <div class="activity-gallery">
-                        <img src="Image/Delta Heritage Architectural Competition/Delta1.jpeg" alt="Delta Heritage 1">
-                        <img src="Image/Delta Heritage Architectural Competition/Delta2.jpeg" alt="Delta Heritage 2">
-                        <img src="Image/Delta Heritage Architectural Competition/Delta3.jpeg" alt="Delta Heritage 3">
-                        <img src="Image/Delta Heritage Architectural Competition/Delta4.jpeg" alt="Delta Heritage 4">
+                        <img src="Image/Delta Heritage Architectural Competition/Delta1.jpeg" alt="Delta 1">
+                        <img src="Image/Delta Heritage Architectural Competition/Delta2.jpeg" alt="Delta 2">
+                        <img src="Image/Delta Heritage Architectural Competition/Delta3.jpeg" alt="Delta 3">
+                        <img src="Image/Delta Heritage Architectural Competition/Delta4.jpeg" alt="Delta 4">
                     </div>
                 </article>
 
@@ -519,7 +505,7 @@
                         <h3>University Championship 11v11</h3>
                         <span class="activity-date">Feb 2026</span>
                     </div>
-                    <p class="activity-text">Participated effectively in the highly competitive University Championship 11v11 matches.</p>
+                    <p class="activity-text">Participated in the highly competitive Galala University Championship 11v11 football tournament.</p>
                     <div class="activity-gallery">
                         <img src="Image/11Galala2026/11Gala1.jpg" alt="11Gala 1">
                         <img src="Image/11Galala2026/11Gala2.jpg" alt="11Gala 2">
@@ -533,12 +519,12 @@
                         <h3>Graduation Projects Discussion</h3>
                         <span class="activity-date">Jun 2025</span>
                     </div>
-                    <p class="activity-text">Contributed heavily to organizing and managing the graduation projects discussions.</p>
+                    <p class="activity-text">Contributed to organizing and managing the graduation projects discussions at Galala University.</p>
                     <div class="activity-gallery">
-                        <img src="Image/Graud2025/Graud20251.jpg" alt="Graud 1">
-                        <img src="Image/Graud2025/Graud20252.jpg" alt="Graud 2">
-                        <img src="Image/Graud2025/Graud20253.jpg" alt="Graud 3">
-                        <img src="Image/Graud2025/Graud20254.jpg" alt="Graud 4">
+                        <img src="Image/Graud2025/Graud20251.jpg" alt="Graduation 1">
+                        <img src="Image/Graud2025/Graud20252.jpg" alt="Graduation 2">
+                        <img src="Image/Graud2025/Graud20253.jpg" alt="Graduation 3">
+                        <img src="Image/Graud2025/Graud20254.jpg" alt="Graduation 4">
                     </div>
                 </article>
 
@@ -547,7 +533,7 @@
                         <h3>FinYology – FinTech for Youth Initiative</h3>
                         <span class="activity-date">2024 / 2025</span>
                     </div>
-                    <p class="activity-text">Received recognition for outstanding participation in the Central Bank of Egypt's FinYology: FinTech for Youth initiative, an initiative aiming at developing innovative financial technology solutions among Egypt's youth.</p>
+                    <p class="activity-text">Recognized for outstanding participation in the Central Bank of Egypt's FinYology initiative — developing innovative financial technology solutions among Egypt's youth.</p>
                     <div class="activity-gallery">
                         <img src="Image/FinOlogy/FinOlogy1.jpeg" alt="FinYology 1">
                         <img src="Image/FinOlogy/FinOlogy2.jpeg" alt="FinYology 2">
@@ -561,7 +547,7 @@
                         <h3>City Club Coaching</h3>
                         <span class="activity-date">2023 – 2024</span>
                     </div>
-                    <p class="activity-text">Served proactively as a goalkeeper coach at City Club, developing key athletic and strategic talents.</p>
+                    <p class="activity-text">Served as goalkeeper coach at City Club, developing key athletic and strategic talents in young players.</p>
                     <div class="activity-gallery">
                         <img src="Image/CityClub2023-2024/City1.jpg" alt="City Club 1">
                         <img src="Image/CityClub2023-2024/City2.jpg" alt="City Club 2">
@@ -575,7 +561,7 @@
                         <h3>Leaders Preparation Champion</h3>
                         <span class="activity-date">Feb 2023</span>
                     </div>
-                    <p class="activity-text">Participated and achieved top position at the esteemed Leaders Preparation Championship.</p>
+                    <p class="activity-text">Achieved top position at the esteemed Leaders Preparation Championship.</p>
                     <div class="activity-gallery">
                         <img src="Image/Kada2023/kada1.jpg" alt="Kada 1">
                         <img src="Image/Kada2023/kada2.jpg" alt="Kada 2">
@@ -587,14 +573,14 @@
                 <article class="activity-card" data-reveal>
                     <div class="activity-header">
                         <h3>University Nile Champion 5v5</h3>
-                        <span class="activity-date">October 2022</span>
+                        <span class="activity-date">Oct 2022</span>
                     </div>
                     <p class="activity-text">Achieved championship status in the University Nile 5v5 competition.</p>
                     <div class="activity-gallery">
-                        <img src="Image/UN Nile 2022/UN2022_1.jpg" alt="University Nile 1">
-                        <img src="Image/UN Nile 2022/UN2022_2.jpg" alt="University Nile 2">
-                        <img src="Image/UN Nile 2022/UN2022_3.jpg" alt="University Nile 3">
-                        <img src="Image/UN Nile 2022/UN2022_4.jpg" alt="University Nile 4">
+                        <img src="Image/UN Nile 2022/UN2022_1.jpg" alt="UN Nile 1">
+                        <img src="Image/UN Nile 2022/UN2022_2.jpg" alt="UN Nile 2">
+                        <img src="Image/UN Nile 2022/UN2022_3.jpg" alt="UN Nile 3">
+                        <img src="Image/UN Nile 2022/UN2022_4.jpg" alt="UN Nile 4">
                     </div>
                 </article>
 
@@ -603,67 +589,73 @@
                         <h3>Football Journey</h3>
                         <span class="activity-date">2014 – 2024</span>
                     </div>
-                    <p class="activity-text">I played football across different Egyptian clubs, building teamwork, discipline, and leadership on and off the field.</p>
+                    <p class="activity-text">Played football across Egyptian clubs for a decade — building teamwork, discipline, and leadership on and off the field.</p>
                     <div class="activity-gallery">
-                        <img src="Image/FootBall/DSC_3717.JPG" alt="Football photo 1">
-                        <img src="Image/FootBall/IMG_0863.JPG" alt="Football photo 2">
-                        <img src="Image/FootBall/IMG_0861.JPG" alt="Football photo 3">
-                        <img src="Image/FootBall/LKXJ1949.JPG" alt="Football photo 4">
+                        <img src="Image/FootBall/DSC_3717.JPG" alt="Football 1">
+                        <img src="Image/FootBall/IMG_0863.JPG" alt="Football 2">
+                        <img src="Image/FootBall/IMG_0861.JPG" alt="Football 3">
+                        <img src="Image/FootBall/LKXJ1949.JPG" alt="Football 4">
                     </div>
                 </article>
+
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- ======================================================
+         PROJECTS
+    ====================================================== -->
     <section id="projects">
         <div class="container">
             <div class="section-header" data-reveal>
-                <h2>Featured Projects</h2>
-                <div class="line"></div>
+                <p class="section-label">Projects</p>
+                <h2 class="section-title">Featured Work</h2>
             </div>
-            <div class="projects-grid">
-                <!-- Project: Talaqah -->
-                <article class="project-card" data-reveal>
-                    <div class="project-visual">
-                        <video controls preload="metadata">
-                            <source src="Projects/Talaqah.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="project-info">
-                        <h3>Talaqah – CEFR English Assessment Platform</h3>
-                        <p class="project-date">Date: 2026</p>
-                        <p>Production-oriented English language assessment platform evaluating students across CEFR levels (A1–C2) with skills including Grammar, Vocabulary, Reading, Listening, Writing, and Speaking. Built with a focus on scalability, security, and real-world performance.</p>
-                        <ul style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.8; margin-bottom: 1.25rem; padding-left: 1.2rem;">
-                            <li>Clean Architecture with CQRS and a custom in-house Mediator</li>
-                            <li>Result Pattern, FluentValidation, pagination, soft deletion, auditing, and centralized exception handling</li>
-                            <li>EF Core + SQL Server for data access; ADO.NET + Stored Procedures for performance-sensitive paths</li>
-                            <li>JWT authentication, refresh-token flow, role-based authorization</li>
-                            <li>AI-powered evaluation for Writing and Speaking with multi-provider support</li>
-                            <li>Audio upload & streaming for Listening/Speaking; SignalR for real-time exam notifications</li>
-                            <li>Background service for automatic exam expiration</li>
-                        </ul>
-                        <div class="project-tags" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
-                            <span class="project-tag">.NET 10</span>
-                            <span class="project-tag">ASP.NET Core Web API</span>
-                            <span class="project-tag">Clean Architecture</span>
-                            <span class="project-tag">CQRS</span>
-                            <span class="project-tag">EF Core</span>
-                            <span class="project-tag">SQL Server</span>
-                            <span class="project-tag">ADO.NET</span>
-                            <span class="project-tag">JWT</span>
-                            <span class="project-tag">SignalR</span>
-                            <span class="project-tag">AI Integration</span>
-                            <span class="project-tag">FluentValidation</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="Projects/Talaqah.mp4" target="_blank" class="project-link project-link-main">Video</a>
-                            <a href="https://github.com/ihab55" target="_blank" class="project-link project-link-github">GitHub</a>
-                        </div>
-                    </div>
-                </article>
 
-                <!-- Project: Sale Management System -->
+            <!-- Featured: Talaqah -->
+            <div class="project-featured" data-reveal>
+                <div class="project-featured-visual">
+                    <span class="project-featured-badge"><i class="fas fa-star"></i> Featured</span>
+                    <video controls preload="metadata">
+                        <source src="Projects/Talaqah.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="project-featured-info">
+                    <p class="project-category">Backend · .NET 10 · AI Integration</p>
+                    <h3>Talaqah — CEFR English Assessment Platform</h3>
+                    <p>Production-oriented platform evaluating students across CEFR levels (A1–C2) with Grammar, Vocabulary, Reading, Listening, Writing, and Speaking assessments. Designed for scalability, security, and real-world performance.</p>
+                    <ul class="project-highlights">
+                        <li>Clean Architecture with CQRS and a custom in-house Mediator</li>
+                        <li>Result Pattern, FluentValidation, soft deletion, auditing, centralized exception handling</li>
+                        <li>EF Core + SQL Server; ADO.NET + Stored Procedures for performance-sensitive paths</li>
+                        <li>JWT auth, refresh-token flow, role-based authorization</li>
+                        <li>AI-powered evaluation for Writing &amp; Speaking — multi-provider support</li>
+                        <li>Audio upload &amp; streaming; SignalR real-time notifications; exam expiry background service</li>
+                    </ul>
+                    <div class="project-featured-tags">
+                        <span class="project-tag">.NET 10</span>
+                        <span class="project-tag">ASP.NET Core</span>
+                        <span class="project-tag">Clean Architecture</span>
+                        <span class="project-tag">CQRS</span>
+                        <span class="project-tag">EF Core</span>
+                        <span class="project-tag">SQL Server</span>
+                        <span class="project-tag">JWT</span>
+                        <span class="project-tag">SignalR</span>
+                        <span class="project-tag">AI Integration</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="Projects/Talaqah.mp4" target="_blank" class="project-link project-link-main"><i class="fas fa-play"></i> Watch Demo</a>
+                        <a href="https://talaqah.runasp.net/" target="_blank" class="project-link project-link-live">
+                            <i class="fas fa-external-link-alt"></i> Live Preview
+                            <span class="live-badge">Testing</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Projects Grid -->
+            <div class="projects-grid">
+
                 <article class="project-card" data-reveal>
                     <div class="project-visual">
                         <video controls preload="metadata">
@@ -672,21 +664,20 @@
                     </div>
                     <div class="project-info">
                         <h3>Sale Management System</h3>
-                        <p class="project-date">Date: Mar 2026 – Apr 2026</p>
-                        <p>Enterprise-grade sales management system. Designed a layered .NET WinForms architecture using Dapper, DTOs, dependency injection, and robust validation with scalable, SOLID-based backend principles.</p>
-                        <div class="project-tags" style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem;">
+                        <p class="project-date">Mar 2026 – Apr 2026</p>
+                        <p>Enterprise-grade sales management desktop app. Layered .NET WinForms architecture with Dapper, DTOs, dependency injection, and SOLID-based backend principles.</p>
+                        <div class="project-tags">
                             <span class="project-tag">C# WinForms</span>
                             <span class="project-tag">Dapper</span>
-                            <span class="project-tag">Dependency Injection</span>
+                            <span class="project-tag">DI</span>
                         </div>
                         <div class="project-links">
-                            <a href="Projects/SMSD.mp4" target="_blank" class="project-link project-link-main">Video</a>
-                            <a href="https://github.com/ihab55/SalesManagementSystemDesktop" target="_blank" class="project-link project-link-github">GitHub</a>
+                            <a href="Projects/SMSD.mp4" target="_blank" class="project-link project-link-main"><i class="fas fa-play"></i> Demo</a>
+                            <a href="https://github.com/ihab55/SalesManagementSystemDesktop" target="_blank" class="project-link project-link-github"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Project: SEEN -->
                 <article class="project-card" data-reveal>
                     <div class="project-visual">
                         <video controls preload="metadata">
@@ -695,22 +686,20 @@
                     </div>
                     <div class="project-info">
                         <h3>SEEN – Sports Management</h3>
-                        <p class="project-date">Date: Aug 2025 - now</p>
-                        <p>Enterprise-grade sports team management system. Designed a layered backend using ASP.NET Core
-                            to handle complex subscription models.</p>
-                        <div class="project-tags" style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem;">
+                        <p class="project-date">Aug 2025 – Present</p>
+                        <p>Enterprise sports team management system with a layered ASP.NET Core backend handling complex subscription models and member workflows.</p>
+                        <div class="project-tags">
                             <span class="project-tag">ASP.NET Core</span>
                             <span class="project-tag">SQL Server</span>
-                            <span class="project-tag">Dependency Injection</span>
+                            <span class="project-tag">DI</span>
                         </div>
                         <div class="project-links">
-                            <a href="Projects/SeenApp.mp4" target="_blank" class="project-link project-link-main">Video</a>
-                            <a href="https://github.com/ihab55" target="_blank" class="project-link project-link-github">GitHub</a>
+                            <a href="Projects/SeenApp.mp4" target="_blank" class="project-link project-link-main"><i class="fas fa-play"></i> Demo</a>
+                            <a href="https://github.com/ihab55" target="_blank" class="project-link project-link-github"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Project: DVLD -->
                 <article class="project-card" data-reveal>
                     <div class="project-visual">
                         <video controls preload="metadata">
@@ -719,22 +708,19 @@
                     </div>
                     <div class="project-info">
                         <h3>DVLD – License System</h3>
-                        <p class="project-date">Date: Feb 2025 - Jul 2025</p>
-                        <p>A comprehensive desktop solution for driver and vehicle licensing, implementing strict
-                            business logic in a 3-tier architecture.</p>
-                        <div class="project-tags" style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem;">
+                        <p class="project-date">Feb 2025 – Jul 2025</p>
+                        <p>Comprehensive desktop solution for driver and vehicle licensing — strict business logic implemented across a clean 3-tier architecture.</p>
+                        <div class="project-tags">
                             <span class="project-tag">C# WinForms</span>
                             <span class="project-tag">ADO.NET</span>
                         </div>
                         <div class="project-links">
-                            <a href="Projects/DVLDDesktop.mp4" target="_blank" class="project-link project-link-main">Video</a>
-                            <a href="https://github.com/ihab55/DVDL-System" target="_blank"
-                                class="project-link project-link-github">GitHub</a>
+                            <a href="Projects/DVLDDesktop.mp4" target="_blank" class="project-link project-link-main"><i class="fas fa-play"></i> Demo</a>
+                            <a href="https://github.com/ihab55/DVDL-System" target="_blank" class="project-link project-link-github"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Project: Mini Exams -->
                 <article class="project-card" data-reveal>
                     <div class="project-visual">
                         <video controls preload="metadata">
@@ -743,22 +729,19 @@
                     </div>
                     <div class="project-info">
                         <h3>Mini Exams Online</h3>
-                        <p class="project-date">Date: Apr 2025 - Apr 2025</p>
-                        <p>Scalable web-based assessment platform featuring real-time evaluation logic and secure
-                            role-based access control.</p>
-                        <div class="project-tags" style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem;">
+                        <p class="project-date">Apr 2025</p>
+                        <p>Scalable web-based assessment platform with real-time evaluation logic and secure role-based access control.</p>
+                        <div class="project-tags">
                             <span class="project-tag">Razor Pages</span>
                             <span class="project-tag">MVC</span>
                         </div>
                         <div class="project-links">
-                            <a href="Projects/MiniExamWeb.mp4" target="_blank" class="project-link project-link-main">Video</a>
-                            <a href="https://github.com/ihab55/MiniExamsOnlineSystems" target="_blank"
-                                class="project-link project-link-github">GitHub</a>
+                            <a href="Projects/MiniExamWeb.mp4" target="_blank" class="project-link project-link-main"><i class="fas fa-play"></i> Demo</a>
+                            <a href="https://github.com/ihab55/MiniExamsOnlineSystems" target="_blank" class="project-link project-link-github"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Project: Password Master -->
                 <article class="project-card" data-reveal>
                     <div class="project-visual">
                         <video controls preload="metadata">
@@ -767,22 +750,19 @@
                     </div>
                     <div class="project-info">
                         <h3>Password Master</h3>
-                        <p class="project-date">Date: Jan 2025 - Jan 2025</p>
-                        <p>Secure password generation utility with customizable complexity parameters and smooth user
-                            interaction.</p>
-                        <div class="project-tags" style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem;">
+                        <p class="project-date">Jan 2025</p>
+                        <p>Secure password generation utility with customizable complexity parameters and smooth UX.</p>
+                        <div class="project-tags">
                             <span class="project-tag">C#</span>
                             <span class="project-tag">Algorithms</span>
                         </div>
                         <div class="project-links">
-                            <a href="Projects/PasswordGenerator.mp4" target="_blank" class="project-link project-link-main">Video</a>
-                            <a href="https://github.com/ihab55/Generate-Password" target="_blank"
-                                class="project-link project-link-github">GitHub</a>
+                            <a href="Projects/PasswordGenerator.mp4" target="_blank" class="project-link project-link-main"><i class="fas fa-play"></i> Demo</a>
+                            <a href="https://github.com/ihab55/Generate-Password" target="_blank" class="project-link project-link-github"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Project: Logic Puzzle -->
                 <article class="project-card" data-reveal>
                     <div class="project-visual">
                         <video controls preload="metadata">
@@ -791,22 +771,19 @@
                     </div>
                     <div class="project-info">
                         <h3>Logic Puzzle Game</h3>
-                        <p class="project-date">Date: Dec 2024 - Jan 2025</p>
-                        <p>Interactive game developed to showcase complex logic implementation and state management in
-                            desktop applications.</p>
-                        <div class="project-tags" style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem;">
-                            <span class="project-tag">Game Logic</span>
+                        <p class="project-date">Dec 2024 – Jan 2025</p>
+                        <p>Interactive game showcasing complex logic implementation and state management in a desktop application.</p>
+                        <div class="project-tags">
                             <span class="project-tag">C#</span>
+                            <span class="project-tag">Game Logic</span>
                         </div>
                         <div class="project-links">
-                            <a href="Projects/Puzell.mp4" target="_blank" class="project-link project-link-main">Video</a>
-                            <a href="https://github.com/ihab55/PuzzleGame" target="_blank"
-                                class="project-link project-link-github">GitHub</a>
+                            <a href="Projects/Puzell.mp4" target="_blank" class="project-link project-link-main"><i class="fas fa-play"></i> Demo</a>
+                            <a href="https://github.com/ihab55/PuzzleGame" target="_blank" class="project-link project-link-github"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Project: Pool Table Timer & Billing -->
                 <article class="project-card" data-reveal>
                     <div class="project-visual">
                         <video controls preload="metadata">
@@ -814,23 +791,20 @@
                         </video>
                     </div>
                     <div class="project-info">
-                        <h3>Sample Project - Pool Table Timer & Billing (C# .NET)</h3>
-                        <p class="project-date">Date: Apr 2025 - Apr 2025</p>
-                        <p>Built a reusable WinForms UserControl to track pool table sessions with real-time timers,
-                            automatic fee calculation, and event-driven updates using delegates. Designed for easy
-                            integration into multi-table management systems.</p>
-                        <div class="project-tags" style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem;">
+                        <h3>Pool Table Timer &amp; Billing</h3>
+                        <p class="project-date">Apr 2025</p>
+                        <p>Reusable WinForms UserControl tracking pool table sessions with real-time timers, automatic fee calculation, and event-driven updates using delegates.</p>
+                        <div class="project-tags">
                             <span class="project-tag">WinForms</span>
                             <span class="project-tag">C# .NET</span>
                         </div>
                         <div class="project-links">
-                            <a href="Projects/TableManagment.mp4" target="_blank" class="project-link project-link-main">Video</a>
-                            <a href="https://github.com/ihab55" target="_blank" class="project-link project-link-github">GitHub</a>
+                            <a href="Projects/TableManagment.mp4" target="_blank" class="project-link project-link-main"><i class="fas fa-play"></i> Demo</a>
+                            <a href="https://github.com/ihab55" target="_blank" class="project-link project-link-github"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Project: XO Game -->
                 <article class="project-card" data-reveal>
                     <div class="project-visual">
                         <video controls preload="metadata">
@@ -838,22 +812,20 @@
                         </video>
                     </div>
                     <div class="project-info">
-                        <h3>XOGame</h3>
-                        <p class="project-date">Date: Sep 2024 - Sep 2024</p>
-                        <p>Built a simple Tic-Tac-Toe game in C# to practice object-oriented design, user input
-                            handling, and game state management for winner/draw detection.</p>
-                        <div class="project-tags" style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem;">
+                        <h3>XO Game</h3>
+                        <p class="project-date">Sep 2024</p>
+                        <p>Tic-Tac-Toe implementation in C# practicing OOP design, user input handling, and game state management.</p>
+                        <div class="project-tags">
                             <span class="project-tag">C#</span>
                             <span class="project-tag">OOP</span>
                         </div>
                         <div class="project-links">
-                            <a href="Projects/XOGame.mp4" target="_blank" class="project-link project-link-main">Video</a>
-                            <a href="https://github.com/ihab55" target="_blank" class="project-link project-link-github">GitHub</a>
+                            <a href="Projects/XOGame.mp4" target="_blank" class="project-link project-link-main"><i class="fas fa-play"></i> Demo</a>
+                            <a href="https://github.com/ihab55" target="_blank" class="project-link project-link-github"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Project: C++ Console Banking System -->
                 <article class="project-card" data-reveal>
                     <div class="project-visual">
                         <video controls preload="metadata">
@@ -861,94 +833,178 @@
                         </video>
                     </div>
                     <div class="project-info">
-                        <h3>Console Banking System (C++)</h3>
-                        <p>Console-based banking system simulating core operations: account management, balance tracking,
-                            and currency exchange. Built with OOP principles and file handling for persistent account
-                            data without a database.</p>
-                        <div class="project-tags" style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem;">
+                        <h3>Console Banking System</h3>
+                        <p>Console-based banking system simulating account management, balance tracking, and currency exchange. Built with OOP and file I/O for persistent data — no database required.</p>
+                        <div class="project-tags">
                             <span class="project-tag">C++</span>
                             <span class="project-tag">OOP</span>
                             <span class="project-tag">File I/O</span>
                         </div>
                         <div class="project-links">
-                            <a href="Projects/BankSmallSystem.mp4" target="_blank" class="project-link project-link-main">Video</a>
-                            <a href="https://github.com/ihab55" target="_blank" class="project-link project-link-github">GitHub</a>
+                            <a href="Projects/BankSmallSystem.mp4" target="_blank" class="project-link project-link-main"><i class="fas fa-play"></i> Demo</a>
+                            <a href="https://github.com/ihab55" target="_blank" class="project-link project-link-github"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </article>
+
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <a href="#" class="logo">EHAB AYMAN</a>
-            <p
-                style="color: var(--text-muted); text-align: center; max-width: 500px; margin-top: -1rem; margin-bottom: 1rem;">
-                Let's build something exceptional together. Feel free to reach out for collaborations or inquiries.</p>
-            <div class="social-links">
-                <a href="https://github.com/ihab55" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/ehab-ayman-0825492a5/" target="_blank" title="LinkedIn"><i
-                        class="fab fa-linkedin"></i></a>
-                <a href="https://www.youtube.com/@ehab.Ayman7420" target="_blank" title="YouTube"><i
-                        class="fab fa-youtube"></i></a>
-                <a href="mailto:ehab.ayman7420@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-                <a href="tel:+201145655800" title="Phone"><i class="fas fa-phone"></i></a>
+    <!-- ======================================================
+         CONTACT
+    ====================================================== -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-left" data-reveal>
+                    <p class="section-label">Get in Touch</p>
+                    <h2>Let's build something<br><span class="highlight">great together</span></h2>
+                    <p>Open to backend engineering roles, internship opportunities, and technical collaborations. I respond within 24 hours.</p>
+                    <div class="contact-methods">
+                        <a href="mailto:ehab.ayman7420@gmail.com" class="contact-method">
+                            <div class="contact-method-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-method-text">
+                                <strong>Email</strong>
+                                <span>ehab.ayman7420@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+201145655800" class="contact-method">
+                            <div class="contact-method-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-method-text">
+                                <strong>Phone</strong>
+                                <span>+20 114 565 5800</span>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ehab-ayman-0825492a5/" target="_blank" class="contact-method">
+                            <div class="contact-method-icon"><i class="fab fa-linkedin"></i></div>
+                            <div class="contact-method-text">
+                                <strong>LinkedIn</strong>
+                                <span>linkedin.com/in/ehab-ayman</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-right" data-reveal>
+                    <div class="contact-cta-box">
+                        <h4>Ready to work together?</h4>
+                        <p>Whether you're looking for a backend engineer, want to collaborate on a project, or just want to connect — my inbox is always open.</p>
+                        <a href="mailto:ehab.ayman7420@gmail.com" class="btn btn-primary contact-cta-btn">
+                            <i class="fas fa-paper-plane"></i> Send me a message
+                        </a>
+                    </div>
+
+                    <div class="contact-social-card">
+                        <h4>Also find me on</h4>
+                        <div class="social-grid">
+                            <a href="https://github.com/ihab55" target="_blank" class="social-item">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ehab-ayman-0825492a5/" target="_blank" class="social-item">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://www.youtube.com/@ehab.Ayman7420" target="_blank" class="social-item">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                            <a href="Ehab_Ayman_CV.pdf" target="_blank" class="social-item">
+                                <i class="fas fa-file-pdf"></i>
+                                <span>Resume</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p class="copyright">&copy; 2026 Ehab Ayman. Crafted with precision.</p>
+        </div>
+    </section>
+
+    <!-- ======================================================
+         FOOTER
+    ====================================================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">Ehab<span>.</span></a>
+                    <p>Backend .NET Engineer — building scalable systems with clean code and real-world impact.</p>
+                </div>
+                <nav class="footer-nav">
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <div class="footer-socials">
+                    <a href="https://github.com/ihab55" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ehab-ayman-0825492a5/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@ehab.Ayman7420" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="mailto:ehab.ayman7420@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Ehab Ayman. All rights reserved.</p>
+                <p class="footer-tagline">Designed &amp; built with <span>precision</span></p>
+            </div>
         </div>
     </footer>
 
+    <!-- ======================================================
+         SCRIPTS
+    ====================================================== -->
     <script>
-        // Reveal on Scroll
-        const reveal = () => {
-            const reveals = document.querySelectorAll('[data-reveal]');
-            reveals.forEach(element => {
-                const windowHeight = window.innerHeight;
-                const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150;
-                if (elementTop < windowHeight - elementVisible) {
-                    element.classList.add('active');
+        // ── Scroll reveal ──────────────────────────────────────
+        const revealEls = document.querySelectorAll('[data-reveal]');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('active');
+                    revealObserver.unobserve(e.target);
                 }
             });
-        };
+        }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+        revealEls.forEach(el => revealObserver.observe(el));
 
-        window.addEventListener('scroll', reveal);
-        window.addEventListener('load', reveal);
-
-        // Hide Nav on Scroll Down, Show on Scroll Up
-        let lastScroll = 0;
+        // ── Nav: scroll state + hide/show ─────────────────────
+        const navbar = document.getElementById('navbar');
+        let lastY = 0;
         window.addEventListener('scroll', () => {
-            const nav = document.querySelector('nav');
-            const currentScroll = window.scrollY;
+            const y = window.scrollY;
+            navbar.classList.toggle('scrolled', y > 20);
+            navbar.classList.toggle('nav-hidden', y > lastY && y > 120);
+            lastY = y;
+        }, { passive: true });
 
-            // Handle background & height
-            if (currentScroll > 50) {
-                nav.style.background = 'rgba(5, 8, 16, 0.9)';
-                nav.style.height = '70px';
-                nav.style.borderBottomColor = 'rgba(255,255,255,0.1)';
-            } else {
-                nav.style.background = 'rgba(5, 8, 16, 0.7)';
-                nav.style.height = '90px';
-                nav.style.borderBottomColor = 'var(--glass-border)';
-            }
+        // ── Active nav link ────────────────────────────────────
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const activateLink = () => {
+            let current = '';
+            sections.forEach(s => {
+                if (window.scrollY >= s.offsetTop - 120) current = s.id;
+            });
+            navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
+        };
+        window.addEventListener('scroll', activateLink, { passive: true });
 
-            // Handle hiding/showing
-            if (currentScroll > lastScroll && currentScroll > 200) {
-                // Scrolling down
-                nav.classList.add('nav-hidden');
-            } else {
-                // Scrolling up
-                nav.classList.remove('nav-hidden');
-            }
-
-            lastScroll = currentScroll;
+        // ── Mobile menu ────────────────────────────────────────
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        hamburger.addEventListener('click', () => {
+            const open = mobileMenu.classList.toggle('open');
+            hamburger.classList.toggle('open', open);
+            document.body.style.overflow = open ? 'hidden' : '';
         });
-
-        // Initialize animations for elements in view
-        reveal();
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+                hamburger.classList.remove('open');
+                document.body.style.overflow = '';
+            });
+        });
     </script>
 </body>
-
 </html>
