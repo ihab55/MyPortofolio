@@ -457,6 +457,27 @@ nav .container {
     display: block;
 }
 
+/* FGSSR full-width card */
+.fgssr-card {
+    max-width: 100%;
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(139,0,0,0.06) 100%);
+    border-color: rgba(139,0,0,0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+.fgssr-card::before {
+    content: 'FGSSR';
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    color: #8B0000;
+    opacity: 0.35;
+}
+
 .about-lead {
     font-size: 1.5rem;
     color: var(--white);
